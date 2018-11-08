@@ -7,5 +7,5 @@ void Calendar :: tick(){
 }
 
 void Calendar :: refresh(){
-	system("./pyscript.sh");
+	system("./pystuff/pyscript.sh");
 }

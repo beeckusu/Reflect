@@ -14,4 +14,11 @@ pip install --upgrade requests
 ```
 `
 
+## Testing
 
+```
+g++ calendartest.cpp calendar.cpp module.cpp -o calendartest
+./calendartest
+```
+
+## Running

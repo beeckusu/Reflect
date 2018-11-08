@@ -11,7 +11,7 @@ class Module
 
 	//Public members
 	public:
-		virtual ~Module();
+		//virtual ~Module();
 		virtual void tick();
 		virtual void refresh();
 

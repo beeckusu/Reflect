@@ -11,16 +11,10 @@ from oauth2client.client import OAuth2WebServerFlow
 from oauth2client.client import flow_from_clientsecrets
 
 
-# For this example, the client id and client secret are command-line arguments.
-CLIENT_SECRETS_FILE = "credentials.json"
-
-# The scope URL for read/write access to a user's calendar data
-scope = ['https://www.googleapis.com/auth/calendar.readonly']
-
 # Create a flow object. This object holds the client_id, client_secret, and
 # scope. It assists with OAuth 2.0 steps to get user authorization and
 # credentials.
-flow = flow_from_clientsecrets('client_secrets.json',
+flow = flow_from_clientsecrets('./pystuff/client_secrets.json',
                                scope='https://www.googleapis.com/auth/calendar.readonly',
                                redirect_uri='urn:ietf:wg:oauth:2.0:oob')
 
