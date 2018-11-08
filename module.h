@@ -1,19 +1,21 @@
-// module.h
+ /*********************************************************//**
+  * Filename: module.h
+  * Author: Gavin Lu
+  * Date: 11/08/2018
+  *
+  * This file contains the Module class declaration.
+  ************************************************************/
 #ifndef MODULE_H
 #define MODULE_H
-
-#include <string>
 
 class Module
 {
 
-	//Private members
-
 	//Public members
 	public:
 		virtual ~Module();
-		virtual void tick();
-		virtual void refresh();
+		virtual void tick() = 0;
+		virtual void refresh() = 0;
 
 };
 
