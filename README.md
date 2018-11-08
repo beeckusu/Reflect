@@ -35,9 +35,9 @@ $ sudo apt-get install libjson0 libjson0-dev
 ## Testing
 
 ```
-g++ main.cpp mirror.cpp time.cpp module.cpp calendar.cpp
+g++ main.cpp mirror.cpp time.cpp calendar.cpp weather.cpp module.cpp  -ljsoncpp -lcurl -o reflect.out
 
-./a.out
+./reflect.out
 ```
 Console should output the date, time and some calendar information.
 
