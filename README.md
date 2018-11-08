@@ -16,7 +16,21 @@ pip install --upgrade requests
 
 pip install --upgrade oauth2client
 ```
-`
+
+You'll also need the libcurl and libjson libraries with the following commands:
+
+OSX:
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+brew install curl
+brew install jsoncpp
+```
+
+Unix:
+```
+$ sudo apt install curl
+$ sudo apt-get install libjson0 libjson0-dev
+```
 
 ## Testing
 
