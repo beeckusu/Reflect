@@ -8,14 +8,16 @@
 class Calendar: public Module
 {
 
+	//Public members
+	public:
+		Calendar();	//Constructor
+		~Calendar();
+		void tick();
+		void refresh();
+
 	//Private members
 	private:
 
-
-	//Public members
-	public:
-		void tick();
-		void refresh();
 
 };
 
