@@ -11,7 +11,7 @@ class Module
 
 	//Public members
 	public:
-		std::string name;
+		virtual ~Module();
 		virtual void tick();
 		virtual void refresh();
 
