@@ -1,12 +1,11 @@
 // calendar.cpp
+#include "calendar.h"
+#include <stdlib.h>
 
-#include <"calendar.h">
-
-
-Calendar :: tick(){
+void Calendar :: tick(){
 
 }
 
-Calendar :: refresh(){
-
+void Calendar :: refresh(){
+	system("./pyscript.sh");
 }
