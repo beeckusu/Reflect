@@ -28,7 +28,7 @@ class Mirror {
 		void refresh();
 
 	private:
-		std::vector<Module*> modules;
+		std::vector<Module*> modules; //Vector that holds all the modules in the mirror
 //		float tick_time = 1/TICK_RATE;
 //		float refresh_time = 1/REFRESH_RATE;
 

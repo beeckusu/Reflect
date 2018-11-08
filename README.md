@@ -27,3 +27,7 @@ g++ calendartest.cpp calendar.cpp module.cpp -o calendartest
 After you authenticate, there will be a
 
 ## Running
+```
+g++ main.cpp mirror.cpp module.cpp time.cpp calendar.cpp -o reflect
+./reflect
+```
