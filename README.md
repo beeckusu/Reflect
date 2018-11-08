@@ -14,18 +14,17 @@ pip install --upgrade google-auth google-auth-oauthlib google-auth-httplib2
 
 pip install --upgrade requests
 
-pip install --upgrade oauth2client 
+pip install --upgrade oauth2client
 ```
 `
 
 ## Testing
 
+```
+g++ main.cpp mirror.cpp time.cpp module.cpp calendar.cpp
 
-To test the calendar integration run:
+./a.out
 ```
-g++ calendartest.cpp calendar.cpp module.cpp -o calendartest
-./calendartest
-```
-After you authenticate, there will be a
+Console should output the date, time and some calendar information.
 
 ## Running
