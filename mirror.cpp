@@ -16,6 +16,7 @@
  */
 Mirror::Mirror() {
 	modules.push_back(new Time());
+	modules.push_back(new Calendar());
 }
 
 ///Destructor of the Mirror object.

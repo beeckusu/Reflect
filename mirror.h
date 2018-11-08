@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include "module.h"
 #include "time.h"
+#include "calendar.h"
 
 //#define TICK_RATE 30
 //#define REFRESH_RATE 30
