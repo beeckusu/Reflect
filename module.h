@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  /*********************************************************//**
   * Filename: module.h
   * Author: Gavin Lu
@@ -21,25 +20,3 @@ class Module
 };
 
 #endif
-=======
-// module.h
-#ifndef MODULE_H
-#define MODULE_H
-
-#include <string>
-
-class Module
-{
-
-	//Private members
-
-	//Public members
-	public:
-		//virtual ~Module();
-		virtual void tick();
-		virtual void refresh();
-
-};
-
-#endif
->>>>>>> 4df124f62de1a8fabdb38a7aee08f33f259944b1

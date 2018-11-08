@@ -25,7 +25,7 @@ def main():
   # credentials file is provided. If the file does not exist, it is
   # created. This object can only hold credentials for a single user, so
   # as-written, this script can only handle a single user.
-  storage = Storage('credentials.dat')
+  storage = Storage('pystuff/credentials.dat')
 
   # The get() function returns the credentials for the Storage object. If no
   # credentials were found, None is returned.
@@ -83,7 +83,7 @@ def main():
 
     #take response and write to json file
 
-    with open('caldata.json', 'w') as outfile:
+    with open('pystuff/caldata.json', 'w') as outfile:
         json.dump(response, outfile)
 
 

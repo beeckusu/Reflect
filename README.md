@@ -1,5 +1,7 @@
 # Reflect
 
+Currently only tested on OSX.
+
 ## Install
 
 You'll need to install pip, Python 2.6 or greater.
@@ -16,9 +18,12 @@ pip install --upgrade requests
 
 ## Testing
 
+
+To test the calendar integration run:
 ```
 g++ calendartest.cpp calendar.cpp module.cpp -o calendartest
 ./calendartest
 ```
+After you authenticate, there will be a
 
 ## Running

@@ -1,4 +1,4 @@
 .DS_Store
-*client_id.json
+*client_secrets.json
 *.o
 *credentials.dat
