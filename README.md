@@ -21,7 +21,9 @@ pip install --upgrade oauth2client
 ## Testing
 
 ```
-g++ main.cpp mirror.cpp time.cpp module.cpp calendar.cpp
+g++ -std=c++11 main.cpp mirror.cpp time.cpp module.cpp calendar.cpp
+
+g++ -std=c++11 event.cpp calendar.cpp calendartest.cpp
 
 ./a.out
 ```

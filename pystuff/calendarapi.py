@@ -67,10 +67,6 @@ def main():
     start = start.isoformat() + 'Z'
     end = end.isoformat() + 'Z'
 
-    print str(start)
-    print str(end)
-
-
     response = service.events().list(calendarId='primary',orderBy = "startTime",singleEvents = True, timeMin = start, timeMax = end).execute()
 
     # Accessing the response like a dict object with an 'items' key

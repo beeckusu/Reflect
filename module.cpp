@@ -1,5 +1,5 @@
  /*********************************************************//**
-  * Filename: module.h
+  * Filename: module.cpp
   * Author: Gavin Lu
   * Date: 11/08/2018
   *
@@ -19,7 +19,7 @@ Module::~Module() {
 ///Function that handles the logic of the modules
 
 /** Function Name: tick
- *  Description: 
+ *  Description:
  *  Parameter Descriptions: No parameters
  *  Return Description: No return
  */
@@ -30,7 +30,7 @@ void Module::tick() {
 //Function that handles output when the screen refreshes.
 
 /** Function Name: refresh
- *  Description: 
+ *  Description:
  *  Parameter Descriptions: No parameters
  *  Return Description: No return
  */
