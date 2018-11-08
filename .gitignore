@@ -1,0 +1,4 @@
+.DS_Store
+*client_id.json
+*.o
+*credentials.dat
