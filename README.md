@@ -39,6 +39,6 @@ g++ main.cpp mirror.cpp time.cpp calendar.cpp weather.cpp module.cpp  -ljsoncpp 
 
 ./reflect.out
 ```
-Console should output the date, time and some calendar information.
+Console should output the date, time, weather, and some calendar information.
 
 ## Running
