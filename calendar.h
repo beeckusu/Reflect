@@ -24,6 +24,8 @@ class Calendar: public Module
 		~Calendar();
 		virtual void tick();
 		virtual void refresh();
+		void printEvents();
+		void getEvents();
 
 	//Private members
 	private:

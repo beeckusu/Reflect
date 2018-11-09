@@ -5,5 +5,6 @@
 
 int main() {
   Calendar c1;
+  c1.printEvents();
   return 0;
 }

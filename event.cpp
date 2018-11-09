@@ -8,10 +8,9 @@
 #include "event.h"
 using namespace std;
 
-Event::Event(tm* startTime,tm* endTime, int dur, string title_str, string location_str ){
+Event::Event(tm* startTime,tm* endTime, string title_str, string location_str ){
   start_time = startTime;
   end_time =  endTime;
-  duration = dur;
   title = title_str;
   location = location_str;
 }
@@ -27,10 +26,6 @@ tm* Event:: getStart_time(){
 
 tm* Event:: getEnd_time(){
   return end_time;
-}
-
-int Event:: getDuration(){
-  return duration;
 }
 
 string Event:: getTitle(){

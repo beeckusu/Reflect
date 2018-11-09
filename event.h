@@ -17,12 +17,11 @@ class Event
 
 	//Public members
 	public:
-		Event(tm*, tm*, int, std::string, std::string);	//Constructor
+		Event(tm*, tm*, std::string, std::string);	//Constructor
 		~Event();
 
     tm *getStart_time();
     tm *getEnd_time();
-    int getDuration();
     std::string getTitle();
     std::string getLocation();
 
@@ -30,7 +29,6 @@ class Event
 	private:
     tm *start_time;
     tm *end_time;
-    int duration;  // in minutes
     std::string title;
     std::string location;
 };

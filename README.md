@@ -35,7 +35,7 @@ $ sudo apt-get install libjson0 libjson0-dev
 ## Testing
 
 ```
-g++ -std=c++11 main.cpp mirror.cpp time.cpp calendar.cpp weather.cpp module.cpp  -ljsoncpp -lcurl -o reflect.out
+g++ -std=c++11 main.cpp mirror.cpp time.cpp calendar.cpp event.cpp weather.cpp module.cpp  -ljsoncpp -lcurl -o reflect.out
 
 g++ -std=c++11 event.cpp calendar.cpp calendartest.cpp
 
