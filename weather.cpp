@@ -5,16 +5,16 @@
   *
   * This file defines the Weather class and its members.
   ************************************************************/
-#include "weather.h"
 #include <cstdint>
 #include <iostream>
 #include <memory>
 #include <string>
 #include <sstream>
 
-
 #include <curl/curl.h>
 #include <json/json.h>
+
+#include "weather.h"
 
 namespace
 {
