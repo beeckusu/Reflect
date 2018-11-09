@@ -12,12 +12,12 @@
 #include <memory>
 #include <string>
 #include <sstream>
-#include "module.h"
-
-
 
 #include <curl/curl.h>
 #include <json/json.h>
+
+#include "module.h"
+
 
 class Weather : public Module
 {
