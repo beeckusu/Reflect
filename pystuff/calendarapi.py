@@ -62,8 +62,9 @@ def main():
     # request object. The arguments provided are:
     #   primary calendar for user
 
-    start = datetime.datetime.now()
-    end = (start + datetime.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    start = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+
+    end = (start + datetime.timedelta(days=1))
     start = start.isoformat() + 'Z'
     end = end.isoformat() + 'Z'
 

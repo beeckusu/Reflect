@@ -23,6 +23,7 @@ Calendar::Calendar() : Module (){
 
 	// call Python script to get user auth
 	system("./pystuff/pyscript.sh");
+
 	ifstream json_file;
 	json json_data;
 
@@ -94,9 +95,9 @@ void Calendar :: refresh(){
 void Calendar :: printEvents(){
 	for (int i = 0;  i < events.size(); i++){
 		Event *e = events.at(i);
-		cout << e->getStart_time() << endl;
-		cout << e->getEnd_time() << endl;
-		cout << e->getTitle() << endl;
-		cout << e->getLocation() << endl;
+		cout << "fake start time: " << e->getStart_time() << endl;
+		cout << "fake end time: " << e->getEnd_time() << endl;
+		cout << "fake title time: " << e->getTitle() << endl;
+		cout << "fake location time: " << e->getLocation() << endl;
 	}
 }

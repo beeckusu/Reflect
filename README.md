@@ -37,7 +37,7 @@ sudo apt-get install libcurl4-openssl-dev
 
 ### Test Time and Weather Module
 ```
-g++ -std=c++11 main.cpp mirror.cpp time.cpp calendar.cpp event.cpp weather.cpp module.cpp event.cpp  -ljsoncpp -lcurl -o reflect.out
+g++ -std=c++11 main.cpp mirror.cpp time.cpp calendar.cpp event.cpp weather.cpp module.cpp -ljsoncpp -lcurl -o reflect.out
 
 ./reflect.out
 ```
@@ -46,9 +46,9 @@ Note that you will still be required to authorize api access because the Calenda
 
 ### Test CalendarModule
 ```
-g++ -std=c++11 event.cpp calendar.cpp calendartest.cpp calendartest
+g++ -std=c++11 event.cpp calendar.cpp module.cpp calendartest.cpp -o calendartest.out
 
-./calendartest
+./calendartest.out
 ```
 
 use for testing calendar module
