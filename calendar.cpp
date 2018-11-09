@@ -62,6 +62,11 @@ Calendar::Calendar() : Module (){
  *  Return Description: No return
  */
 Calendar::~Calendar() {
+	while (events.size() > 0) {
+		Event *e = events.back();
+		events.pop_back();
+		delete e;
+	}
 }
 
 //Function that handles the logic of modules
