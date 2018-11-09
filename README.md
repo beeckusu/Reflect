@@ -28,8 +28,9 @@ brew install jsoncpp
 
 Unix/Raspberry Pi:
 ```
-$ sudo apt install curl
-$ sudo apt-get install libjson0 libjson0-dev
+sudo apt-get install libjsoncpp-dev
+sudo ln -s /usr/include/jsoncpp/json/ /usr/include/json
+sudo apt-get install libcurl4-openssl-dev
 ```
 
 ## Testing
