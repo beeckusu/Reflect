@@ -21,11 +21,10 @@ class Calendar: public Module
 	//Public members
 	public:
 		Calendar();	//Constructor
-		~Calendar();
+		~Calendar(); //Destructor
 		virtual void tick();
 		virtual void refresh();
 		void printEvents();
-		void getEvents();
 
 	//Private members
 	private:

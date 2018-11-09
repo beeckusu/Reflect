@@ -18,7 +18,7 @@ class Event
 	//Public members
 	public:
 		Event(tm*, tm*, std::string, std::string);	//Constructor
-		~Event();
+		~Event(); //Destructor
 
     tm *getStart_time();
     tm *getEnd_time();

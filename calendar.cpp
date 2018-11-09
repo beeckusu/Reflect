@@ -1,4 +1,10 @@
-// calendar.cpp
+/*********************************************************//**
+  * Filename: calendar.cpp
+  * Author: Leo Kim
+  * Date: 11/08/2018
+  *
+  * This file defines the Calendar class and its members.
+  ************************************************************/
 
 #include <fstream>
 #include <string>
@@ -8,8 +14,14 @@
 using json = nlohmann::json;
 using namespace std;
 
+/** Constructor for Calendar class
+* Request user auth for Google Calendar access
+* Reads today's calendar events and then puts them into a vector of Event objs.
+*/
 
 Calendar::Calendar() : Module (){
+
+	// call Python script to get user auth
 	system("./pystuff/pyscript.sh");
 	ifstream json_file;
 	json json_data;
@@ -26,9 +38,8 @@ Calendar::Calendar() : Module (){
 	json_file >> json_data;
 	json_file.close();
 
-
 	//Parse JSON and create event object for each event
-	//using canned data for the time being
+	//NOTE using canned data for the time being
 	for (json::iterator it = json_data["items"].begin(); it != json_data["items"].end(); ++it) {
 		json j = it.value();
 		// tm* start_time;
@@ -42,7 +53,7 @@ Calendar::Calendar() : Module (){
 
 }
 
-///Destructor of Calendar objects
+//Destructor of Calendar objects
 
 /** Function Name: ~Calendar
  *  Description: Properly deconstructs Calendar object.
@@ -52,14 +63,34 @@ Calendar::Calendar() : Module (){
 Calendar::~Calendar() {
 }
 
+//Function that handles the logic of modules
+/** Function Name: tick
+ *  Description:
+ *  Parameter Descriptions: No parameters
+ *  Return Description: No return
+ */
 void Calendar :: tick(){
 
 }
 
+//Function that handles output when the screen refreshes.
+
+/** Function Name: refresh
+ *  Description:
+ *  Parameter Descriptions: No parameters
+ *  Return Description: No return
+ */
 void Calendar :: refresh(){
 
 }
 
+//Function that iterates over events property and prints to console
+
+/** Function Name: printEvents
+ *  Description:
+ *  Parameter Descriptions: No parameters
+ *  Return Description: No return
+ */
 void Calendar :: printEvents(){
 	for (int i = 0;  i < events.size(); i++){
 		Event *e = events.at(i);
@@ -68,8 +99,4 @@ void Calendar :: printEvents(){
 		cout << e->getTitle() << endl;
 		cout << e->getLocation() << endl;
 	}
-}
-
-void Calendar :: getEvents(){
-
 }

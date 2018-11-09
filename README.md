@@ -4,7 +4,7 @@ Currently only tested on OSX.
 
 ## Install
 
-You'll need to install pip, Python 2.6 or greater.
+You'll need to install pip and Python 2.6 (or greater.)
 In addition, run the following commands:
 
 ```
@@ -35,13 +35,16 @@ sudo apt-get install libcurl4-openssl-dev
 
 ## Testing
 
+### Test Time and Weather Module
 ```
 g++ -std=c++11 main.cpp mirror.cpp time.cpp calendar.cpp event.cpp weather.cpp module.cpp event.cpp  -ljsoncpp -lcurl -o reflect.out
 
 ./reflect.out
 ```
-Console should output the date, time, weather, and some calendar information.
+Console should output the date, time, and weather.
+Note that you will still be required to authorize api access because the Calendar constructor is called.
 
+### Test CalendarModule
 ```
 g++ -std=c++11 event.cpp calendar.cpp calendartest.cpp calendartest
 
@@ -49,4 +52,7 @@ g++ -std=c++11 event.cpp calendar.cpp calendartest.cpp calendartest
 ```
 
 use for testing calendar module
+
 ## Running
+
+TBD
