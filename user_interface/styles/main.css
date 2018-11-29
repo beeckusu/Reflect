@@ -1,0 +1,86 @@
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'Noto Sans SC', sans-serif;
+}
+.weather {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 20px;
+}
+.weather .symbol {
+	font-size: 48pt;
+}
+.weather .temp {
+	font-size: 48pt;
+	margin-left: -40px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-weight: bold;
+}
+.weather .description {
+	display: block;
+	text-align:right;
+}
+.weather .humidity {
+	display: block;
+	text-align:right;
+}
+.weather .humidity:before {
+	content: "Humidity: ";
+}
+.calendar {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+}
+.calendar .events {
+  	list-style-type: none;
+}
+.calendar .events .event {
+  	background-color: #ffffff;
+  	padding: 5px;
+  	margin-top: 5px;
+}
+.calendar .events .event .title {
+	font-weight: bold;
+  	background-color: #f4f4f4;
+  	color: #000000;
+  	margin: 0;
+  	padding: 5px;
+}
+.calendar .events .event .location {
+  	background-color: #f4f4f4;
+  	color: #000000;
+  	margin: 0;
+  	padding: 5px;
+}
+.calendar .events .event .date {
+  	background-color: #ffffff;
+  	color: #000000;
+  	margin: 0;
+  	padding: 5px;
+}
+.calendar .events .event .start {
+  	background-color: #6d6d6d;
+  	margin: 0;
+  	padding: 5px;
+}
+.calendar .events .event .end {
+  	color: #6d6d6d;
+  	margin: 0;
+  	padding: 5px;
+}
+.calendar .events .event .end:before {
+  	content: "to ";
+}
+.timedate {
+	padding: 20px;
+}
+.timedate .hour {
+	font-size: 48pt;
+}
+.timedate .ampm {
+	font-size: 24pt;
+}
